@@ -11,10 +11,10 @@
 		CCA7CE3A1CEB2EF900155576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE391CEB2EF900155576 /* ViewController.swift */; };
 		CCA7CE3D1CEB2EF900155576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA7CE3B1CEB2EF900155576 /* Main.storyboard */; };
 		CCA7CE401CEB2EF900155576 /* weather_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE3E1CEB2EF900155576 /* weather_app.xcdatamodeld */; };
-		CCA7CE421CEB2EF900155576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA7CE411CEB2EF900155576 /* Assets.xcassets */; };
 		CCA7CE451CEB2EF900155576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA7CE431CEB2EF900155576 /* LaunchScreen.storyboard */; };
 		CCA7CE501CEB2EF900155576 /* weather_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE4F1CEB2EF900155576 /* weather_appTests.swift */; };
 		CCA7CE5B1CEB2EF900155576 /* weather_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE5A1CEB2EF900155576 /* weather_appUITests.swift */; };
+		CCA7CE6E1CEB3D5200155576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA7CE6D1CEB3D5200155576 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		CCA7CE391CEB2EF900155576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCA7CE3C1CEB2EF900155576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCA7CE3F1CEB2EF900155576 /* weather_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weather_app.xcdatamodel; sourceTree = "<group>"; };
-		CCA7CE411CEB2EF900155576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA7CE441CEB2EF900155576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCA7CE461CEB2EF900155576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA7CE4B1CEB2EF900155576 /* weather-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weather-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +48,7 @@
 		CCA7CE561CEB2EF900155576 /* weather-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weather-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA7CE5A1CEB2EF900155576 /* weather_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_appUITests.swift; sourceTree = "<group>"; };
 		CCA7CE5C1CEB2EF900155576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCA7CE6D1CEB3D5200155576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,13 @@
 		CCA7CE361CEB2EF900155576 /* weather-app */ = {
 			isa = PBXGroup;
 			children = (
+				CCA7CE6C1CEB2F9000155576 /* Constants */,
+				CCA7CE6B1CEB2F8400155576 /* Resources */,
+				CCA7CE681CEB2F6000155576 /* Model */,
+				CCA7CE691CEB2F6400155576 /* View */,
+				CCA7CE6A1CEB2F7700155576 /* Controller */,
 				CCA7CE371CEB2EF900155576 /* AppDelegate.swift */,
-				CCA7CE391CEB2EF900155576 /* ViewController.swift */,
 				CCA7CE3B1CEB2EF900155576 /* Main.storyboard */,
-				CCA7CE411CEB2EF900155576 /* Assets.xcassets */,
 				CCA7CE431CEB2EF900155576 /* LaunchScreen.storyboard */,
 				CCA7CE461CEB2EF900155576 /* Info.plist */,
 				CCA7CE3E1CEB2EF900155576 /* weather_app.xcdatamodeld */,
@@ -126,6 +129,43 @@
 				CCA7CE5C1CEB2EF900155576 /* Info.plist */,
 			);
 			path = "weather-appUITests";
+			sourceTree = "<group>";
+		};
+		CCA7CE681CEB2F6000155576 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCA7CE691CEB2F6400155576 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CCA7CE6A1CEB2F7700155576 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CCA7CE391CEB2EF900155576 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CCA7CE6B1CEB2F8400155576 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCA7CE6D1CEB3D5200155576 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CCA7CE6C1CEB2F9000155576 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCA7CE451CEB2EF900155576 /* LaunchScreen.storyboard in Resources */,
-				CCA7CE421CEB2EF900155576 /* Assets.xcassets in Resources */,
+				CCA7CE6E1CEB3D5200155576 /* Assets.xcassets in Resources */,
 				CCA7CE3D1CEB2EF900155576 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +531,7 @@
 				CCA7CE611CEB2EF900155576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCA7CE621CEB2EF900155576 /* Build configuration list for PBXNativeTarget "weather-appTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +540,7 @@
 				CCA7CE641CEB2EF900155576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCA7CE651CEB2EF900155576 /* Build configuration list for PBXNativeTarget "weather-appUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +549,7 @@
 				CCA7CE671CEB2EF900155576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
