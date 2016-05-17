@@ -15,6 +15,7 @@
 		CCA7CE501CEB2EF900155576 /* weather_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE4F1CEB2EF900155576 /* weather_appTests.swift */; };
 		CCA7CE5B1CEB2EF900155576 /* weather_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE5A1CEB2EF900155576 /* weather_appUITests.swift */; };
 		CCA7CE6E1CEB3D5200155576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA7CE6D1CEB3D5200155576 /* Assets.xcassets */; };
+		CCA7CE701CEB961700155576 /* ForecastDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE6F1CEB961700155576 /* ForecastDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CCA7CE5A1CEB2EF900155576 /* weather_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_appUITests.swift; sourceTree = "<group>"; };
 		CCA7CE5C1CEB2EF900155576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCA7CE6D1CEB3D5200155576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCA7CE6F1CEB961700155576 /* ForecastDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				CCA7CE391CEB2EF900155576 /* ViewController.swift */,
+				CCA7CE6F1CEB961700155576 /* ForecastDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA7CE701CEB961700155576 /* ForecastDetailsVC.swift in Sources */,
 				CCA7CE401CEB2EF900155576 /* weather_app.xcdatamodeld in Sources */,
 				CCA7CE3A1CEB2EF900155576 /* ViewController.swift in Sources */,
 				CCA7CE381CEB2EF900155576 /* AppDelegate.swift in Sources */,
