@@ -16,5 +16,8 @@ class ForecastDetailsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func backBtnPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
