@@ -546,6 +546,30 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="cityLbl" destination="EUh-YI-8Ms" id="ku4-iP-vif"/>
+                        <outlet property="cloudinessLbl" destination="lH9-Fc-W3H" id="c7h-Cz-oYl"/>
+                        <outlet property="dayLbl" destination="MpF-GV-Vwu" id="jhj-Zm-Lfo"/>
+                        <outlet property="descLbl" destination="aMK-ve-CIR" id="cYT-33-dMI"/>
+                        <outlet property="humidityLbl" destination="Rf7-cF-0BC" id="1SC-jR-vb4"/>
+                        <outlet property="in1DayDescImg" destination="D93-5V-fjC" id="IbM-rQ-hKf"/>
+                        <outlet property="in1DayTempLbl" destination="Z3U-RU-2xJ" id="Cbz-IN-bto"/>
+                        <outlet property="in1DayWeekdayLbl" destination="zea-EW-TLs" id="6FA-9G-DsX"/>
+                        <outlet property="in2DaysDescImg" destination="8dA-lI-DU4" id="0Wo-cj-h6h"/>
+                        <outlet property="in2DaysTempLbl" destination="Es2-lH-oyM" id="6mj-fE-NxE"/>
+                        <outlet property="in2DaysWeekdayLbl" destination="HB0-B0-66Z" id="xKj-1c-oG6"/>
+                        <outlet property="in3DaysDescImg" destination="C9C-Ke-aZL" id="SXS-hl-Dy6"/>
+                        <outlet property="in3DaysTempLbl" destination="3HF-ft-sJi" id="Hmi-IO-meB"/>
+                        <outlet property="in3DaysWeekdayLbl" destination="sqa-dj-cV6" id="VDH-ti-g8F"/>
+                        <outlet property="sunriseLbl" destination="rNg-Ju-Xso" id="rqU-CR-qVd"/>
+                        <outlet property="sunsetLbl" destination="Jiw-hR-DiN" id="Dph-KQ-oqF"/>
+                        <outlet property="tempLbl" destination="pm9-mL-fZS" id="9E9-5e-8rd"/>
+                        <outlet property="todayDescImg" destination="r0u-XC-b1b" id="NOh-yD-aqU"/>
+                        <outlet property="todayTempLbl" destination="2y9-XQ-zNh" id="cSL-CM-mY1"/>
+                        <outlet property="weatherDescImg" destination="rUy-hX-7ue" id="XGJ-K1-csa"/>
+                        <outlet property="windLBl" destination="jB4-cx-tsh" id="NLc-Yy-vgs"/>
+                        <outlet property="windLbl" destination="jB4-cx-tsh" id="Et2-8L-fCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
