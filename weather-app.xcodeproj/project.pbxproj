@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC36612A1CEDDD0200EE9A6D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3661291CEDDD0200EE9A6D /* Forecast.swift */; };
 		CCA7CE381CEB2EF900155576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE371CEB2EF900155576 /* AppDelegate.swift */; };
 		CCA7CE3A1CEB2EF900155576 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA7CE391CEB2EF900155576 /* ViewController.swift */; };
 		CCA7CE3D1CEB2EF900155576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA7CE3B1CEB2EF900155576 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC3661291CEDDD0200EE9A6D /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		CCA7CE341CEB2EF800155576 /* weather-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weather-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA7CE371CEB2EF900155576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA7CE391CEB2EF900155576 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		CCA7CE681CEB2F6000155576 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC3661291CEDDD0200EE9A6D /* Forecast.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				CCA7CE401CEB2EF900155576 /* weather_app.xcdatamodeld in Sources */,
 				CCA7CE3A1CEB2EF900155576 /* ViewController.swift in Sources */,
 				CCA7CE381CEB2EF900155576 /* AppDelegate.swift in Sources */,
+				CC36612A1CEDDD0200EE9A6D /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
