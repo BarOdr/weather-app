@@ -72,7 +72,8 @@ class ForecastDetailsVC: UIViewController {
     @IBOutlet weak var todayDescImg: UIImageView!
     @IBOutlet weak var todayTempLbl: UILabel!
     
-    @IBOutlet weak var in1DayWeekdayLbl: UILabel!
+    
+    @IBOutlet weak var in1DayWeekday: UILabel!
     @IBOutlet weak var in1DayDescImg: UIImageView!
     @IBOutlet weak var in1DayTempLbl: UILabel!
     

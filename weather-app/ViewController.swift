@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var sunriseLbl: UILabel!
     @IBOutlet weak var sunsetLbl: UILabel!
     @IBOutlet weak var cloudinessLbl: UILabel!
-    @IBOutlet weak var windLbl: UILabel!
     @IBOutlet weak var humidityLbl: UILabel!
+    @IBOutlet weak var windLbl: UILabel!
     
     //Outlets for the bottom bar
     

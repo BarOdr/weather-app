@@ -193,7 +193,7 @@
                                                             <rect key="frame" x="20" y="0.0" width="32" height="15"/>
                                                         </variation>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="torrential-rain" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-lI-DU4">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="torrential-rain" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-lI-DU4">
                                                         <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         <variation key="heightClass=compact" ambiguous="YES">
                                                             <rect key="frame" x="35" y="17" width="50" height="50"/>
@@ -202,7 +202,7 @@
                                                             <rect key="frame" x="10" y="15" width="50" height="50"/>
                                                         </variation>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="16° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-lH-oyM">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="16° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-lH-oyM">
                                                         <rect key="frame" x="42" y="67" width="36" height="24"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -567,8 +567,7 @@
                         <outlet property="todayDescImg" destination="r0u-XC-b1b" id="NOh-yD-aqU"/>
                         <outlet property="todayTempLbl" destination="2y9-XQ-zNh" id="cSL-CM-mY1"/>
                         <outlet property="weatherDescImg" destination="rUy-hX-7ue" id="XGJ-K1-csa"/>
-                        <outlet property="windLBl" destination="jB4-cx-tsh" id="NLc-Yy-vgs"/>
-                        <outlet property="windLbl" destination="jB4-cx-tsh" id="Et2-8L-fCF"/>
+                        <outlet property="windLbl" destination="jB4-cx-tsh" id="LjT-Vs-vDb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -587,32 +586,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="21° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh3-Jr-oCZ">
-                                <rect key="frame" x="184" y="156" width="230" height="98"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="5H5-ag-FpT"/>
-                                    <constraint firstAttribute="height" constant="115" id="7CL-Ga-MeM"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="230" id="7eL-rv-uWb"/>
-                                    <constraint firstAttribute="height" constant="193" id="A5e-HF-hDL"/>
-                                    <constraint firstAttribute="width" constant="179" id="YGs-Pm-4EA"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="98" id="xYs-j3-9AC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="130"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="7CL-Ga-MeM"/>
-                                        <exclude reference="YGs-Pm-4EA"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="185" y="120" width="230" height="193"/>
-                                </variation>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="84" y="152" width="230" height="193"/>
-                                </variation>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple1" translatesAutoresizingMaskIntoConstraints="NO" id="ckd-Z5-948">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-bP-B3b">
                                 <rect key="frame" x="200" y="40" width="200" height="50"/>
                                 <subviews>
@@ -1434,9 +1410,6 @@
                                     </mask>
                                 </variation>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple1" translatesAutoresizingMaskIntoConstraints="NO" id="ckd-Z5-948">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JWb-dK-CKE">
                                 <rect key="frame" x="20" y="178" width="560" height="174"/>
                                 <subviews>
@@ -2182,11 +2155,9 @@
                             <constraint firstItem="ekC-FU-058" firstAttribute="top" secondItem="iE7-Rw-GHp" secondAttribute="bottom" id="bqA-6H-TbT"/>
                             <constraint firstItem="xbS-6a-Yok" firstAttribute="top" secondItem="UUi-8O-3hY" secondAttribute="bottom" id="cyQ-I2-Ww3"/>
                             <constraint firstItem="UUi-8O-3hY" firstAttribute="top" secondItem="JWb-dK-CKE" secondAttribute="bottom" constant="20" id="fx2-23-fjS"/>
-                            <constraint firstItem="rh3-Jr-oCZ" firstAttribute="centerX" secondItem="tjS-7f-keP" secondAttribute="centerX" id="lav-jm-PKG"/>
                             <constraint firstItem="JWb-dK-CKE" firstAttribute="leading" secondItem="tjS-7f-keP" secondAttribute="leadingMargin" id="nNc-q2-v0I"/>
                             <constraint firstItem="UUi-8O-3hY" firstAttribute="leading" secondItem="tjS-7f-keP" secondAttribute="leading" id="rXq-a0-BZz"/>
                             <constraint firstItem="JWb-dK-CKE" firstAttribute="top" secondItem="hZf-bP-B3b" secondAttribute="bottom" constant="20" id="uCa-7n-hMN"/>
-                            <constraint firstItem="rh3-Jr-oCZ" firstAttribute="centerX" secondItem="tjS-7f-keP" secondAttribute="centerX" id="vlL-YQ-dvY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UUi-8O-3hY" secondAttribute="trailing" id="wAW-dO-aHw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="UUi-8O-3hY" secondAttribute="trailing" id="wuE-ED-8WC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JWb-dK-CKE" secondAttribute="trailing" id="x7b-Ow-bju"/>
@@ -2264,8 +2235,7 @@
                         <outlet property="humidity7" destination="Hzo-VZ-iFY" id="oLb-fy-5DE"/>
                         <outlet property="in1DayDescImg" destination="9PO-NE-817" id="yid-bY-Jty"/>
                         <outlet property="in1DayTempLbl" destination="hFK-dS-xd7" id="BWN-5O-bkl"/>
-                        <outlet property="in1DayWeekDay" destination="ycJ-5A-Be6" id="20N-E0-QxJ"/>
-                        <outlet property="in1DayWeekdayLbl" destination="znp-51-aMq" id="BMY-JI-wR1"/>
+                        <outlet property="in1DayWeekday" destination="J6J-m7-wgC" id="hpc-bB-6VP"/>
                         <outlet property="in2DaysDescImg" destination="jtT-oG-ygp" id="OSe-7n-LUq"/>
                         <outlet property="in2DaysTempLbl" destination="mtG-8I-ZNg" id="QkS-KV-ngw"/>
                         <outlet property="in2DaysWeekdayLbl" destination="cQx-OQ-6Jx" id="DDY-Xm-req"/>
@@ -2274,6 +2244,7 @@
                         <outlet property="in3DaysWeekdayLbl" destination="UJH-Jq-Ceg" id="R7l-5s-neJ"/>
                         <outlet property="temp2" destination="xh7-GW-oiD" id="436-U9-gJI"/>
                         <outlet property="temp3" destination="Xhk-XV-hp2" id="gBU-sf-ntg"/>
+                        <outlet property="temp4" destination="AHA-3u-InI" id="3OO-ED-GeQ"/>
                         <outlet property="temp5" destination="clS-YV-xxY" id="NIi-Pf-6Wl"/>
                         <outlet property="temp6" destination="Udl-75-jmi" id="bCZ-be-yhR"/>
                         <outlet property="temp7" destination="VX7-fq-1XU" id="DV1-WU-jIe"/>
