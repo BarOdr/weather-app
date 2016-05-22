@@ -49,17 +49,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        weather.downloadCurrentWeatherDetails() { weather in
-//            self.cityLbl.text = weather.weatherDesc
-//            print("This label conditions from closure, does it work? \(weather.weatherDesc)")
-//        }
-        
         Weather().downloadCurrentWeatherDetails { (gotWeather) in
             self.updateUI(gotWeather)
-        }
-        
-        Weather().test { (testNumber) in
-            print(testNumber)
         }
     }
     

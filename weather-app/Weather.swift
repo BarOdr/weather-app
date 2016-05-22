@@ -105,26 +105,7 @@ class Weather {
         return _sunset
     }
     
-    init () {
-        
-    }
-    
-    init (city: String, temperature: String, cloudiness: String, humidity: String, rain: String, desc: String, sunrise: String, sunset: String, wind: String) {
-        self._city = city
-        self._temperature = temperature
-        self._cloudiness = cloudiness
-        self._humidity = humidity
-        self._rain = rain
-        self._weatherDesc = desc
-        self._sunrise = sunrise
-        self._sunset = sunset
-        self._wind = wind
-    }
-    
     func downloadForecastDetails(completed: DownloadComplete) {
-        
-        let url = NSURL(string: "http://api.openweathermap.org/data/2.5/forecast?lat=50.21881632497241&lon=19.258997784288912&APPID=892a28376f13432adb8621dd9b859df7")!
-        print(url)
         
     }
 
@@ -171,16 +152,6 @@ class Weather {
                     weatherConditions._temperature = "\(temp)°"
                 }
                 
-                print(weatherConditions._weatherDesc)
-                print(weatherConditions._city)
-                print(weatherConditions.currentDate)
-                print(weatherConditions._wind)
-                print(weatherConditions._humidity)
-                print(weatherConditions._cloudiness)
-                print(weatherConditions._sunset)
-                print(weatherConditions._sunrise)
-                print(weatherConditions._temperature)
-            
                 completed(gotWeather: weatherConditions)
             }
         }
@@ -200,10 +171,5 @@ class Weather {
         dateFormatter.dateFormat = "EEE, d MMMM"
         let dateString = dateFormatter.stringFromDate(date)
         return dateString
-    }
-    
-    func test(testCompleted: TestCompleted) {
-        let i = 6
-        testCompleted(testNumber: i)
     }
 }
