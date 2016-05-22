@@ -98,6 +98,13 @@ class Weather {
         return _sunrise
     }
     
+    var sunset: String {
+        if _sunset == nil {
+            _sunset = ""
+        }
+        return _sunset
+    }
+    
     init () {
         
     }
@@ -123,13 +130,12 @@ class Weather {
 
     func downloadCurrentWeatherDetails(completed: DownloadComplete) {
         
+        let weatherConditions = Weather()
         
         let url = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?lat=50.21881632497241&lon=19.258997784288912&units=metric&lang=pl&APPID=892a28376f13432adb8621dd9b859df7")!
         Alamofire.request(.GET, url).responseJSON { response in
             
             if let data = response.data {
-                
-                let weatherConditions = Weather()
                 
                 let json = JSON(data: data)
                 
@@ -174,14 +180,10 @@ class Weather {
                 print(weatherConditions._sunset)
                 print(weatherConditions._sunrise)
                 print(weatherConditions._temperature)
-                
-                
+            
+                completed(gotWeather: weatherConditions)
             }
-            
-            
         }
-        
-        
     }
     
     func timeStringFromUnixTime(unixTime: Double) -> String {
@@ -200,4 +202,8 @@ class Weather {
         return dateString
     }
     
+    func test(testCompleted: TestCompleted) {
+        let i = 6
+        testCompleted(testNumber: i)
+    }
 }
