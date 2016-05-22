@@ -9,13 +9,8 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
-import UIKit
-import CoreLocation
-
 
 class Weather {
-    
-    let locationManager = CLLocationManager()
     
     private var _day: String!
     private var _hour: String!
@@ -71,7 +66,7 @@ class Weather {
 
     var weatherDesc: String {
         if _weatherDesc == nil {
-            _rain = ""
+            _weatherDesc = ""
         }
         return _weatherDesc
     }
@@ -83,14 +78,45 @@ class Weather {
         return _sunrise
     }
     
-    func downloadForecastDetails(completed: DownloadComplete) {
+    func downloadForecastDetails(completed: DownloadComplete) -> Weather {
         
+        var forecastDet = Weather()
         
+        let url = NSURL(string: "http://api.openweathermap.org/data/2.5/forecast?lat=50.21881632497241&lon=19.258997784288912&APPID=892a28376f13432adb8621dd9b859df7")!
+        let request = Alamofire.request(.GET, url).responseJSON { response in
+        
+            if let data = response.data {
+                let json = JSON(data: data)
+                let name = json["city"]["name"].string!
+                print("name is \(name)")
+                forecastDet._cloudiness = name
+            }
+            
+            completed(weather: forecastDet)
+        }
+        
+        return forecastDet
     }
     
+    func downloadCurrentWeatherDetails(completed: DownloadComplete) {
+        
+        var weatherConditions = Weather()
+        
+        let url = NSURL(string: "http://api.openweathermap.org/data/2.5/weather?lat=50.21881632497241&lon=19.258997784288912&APPID=892a28376f13432adb8621dd9b859df7")!
+        Alamofire.request(.GET, url).responseJSON { response in
+            
+            if let data = response.data {
+                let json = JSON(data: data)
+                weatherConditions._weatherDesc = json["weather"][0]["description"].string! //just for demostration purposes
+                print(weatherConditions._weatherDesc)
+            }
+        }
+        
+        completed(weather: weatherConditions)
+    }
+    
+
     func getLocation() {
         
-        locationManager.delegate = self
     }
-
 }

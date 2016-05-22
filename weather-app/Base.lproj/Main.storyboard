@@ -182,7 +182,7 @@
                                                 <rect key="frame" x="16" y="11" width="120" height="91"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB0-B0-66Z">
-                                                        <rect key="frame" x="45" y="0.0" width="32" height="17"/>
+                                                        <rect key="frame" x="45" y="0.0" width="32" height="15"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -194,7 +194,7 @@
                                                         </variation>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="torrential-rain" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-lI-DU4">
-                                                        <rect key="frame" x="35" y="17" width="50" height="50"/>
+                                                        <rect key="frame" x="35" y="15" width="50" height="50"/>
                                                         <variation key="heightClass=compact" ambiguous="YES">
                                                             <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         </variation>
@@ -203,7 +203,7 @@
                                                         </variation>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="16° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-lH-oyM">
-                                                        <rect key="frame" x="42" y="67" width="36" height="24"/>
+                                                        <rect key="frame" x="42" y="65" width="36" height="27"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
