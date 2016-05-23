@@ -122,7 +122,7 @@
                                                 <rect key="frame" x="16" y="11" width="120" height="91"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zea-EW-TLs">
-                                                        <rect key="frame" x="36" y="0.0" width="48" height="15"/>
+                                                        <rect key="frame" x="36" y="0.0" width="48" height="17"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -134,7 +134,7 @@
                                                         </variation>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="moderate-rain" translatesAutoresizingMaskIntoConstraints="NO" id="D93-5V-fjC">
-                                                        <rect key="frame" x="35" y="15" width="50" height="50"/>
+                                                        <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         <variation key="heightClass=compact" ambiguous="YES">
                                                             <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         </variation>
@@ -143,7 +143,7 @@
                                                         </variation>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="17° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3U-RU-2xJ">
-                                                        <rect key="frame" x="42" y="65" width="36" height="27"/>
+                                                        <rect key="frame" x="42" y="67" width="36" height="24"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -182,7 +182,7 @@
                                                 <rect key="frame" x="16" y="11" width="120" height="91"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB0-B0-66Z">
-                                                        <rect key="frame" x="45" y="0.0" width="32" height="17"/>
+                                                        <rect key="frame" x="45" y="0.0" width="32" height="15"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -194,7 +194,7 @@
                                                         </variation>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="torrential-rain" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-lI-DU4">
-                                                        <rect key="frame" x="35" y="17" width="50" height="50"/>
+                                                        <rect key="frame" x="35" y="15" width="50" height="50"/>
                                                         <variation key="heightClass=compact" ambiguous="YES">
                                                             <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         </variation>
@@ -203,7 +203,7 @@
                                                         </variation>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="16° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-lH-oyM">
-                                                        <rect key="frame" x="42" y="67" width="36" height="24"/>
+                                                        <rect key="frame" x="42" y="65" width="36" height="27"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -303,11 +303,11 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torrential-rain" translatesAutoresizingMaskIntoConstraints="NO" id="rUy-hX-7ue">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PpU-tE-yq5">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PpU-tE-yq5">
                                         <rect key="frame" x="70" y="0.0" width="130" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="London" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUh-YI-8Ms">
-                                                <rect key="frame" x="0.0" y="0.0" width="130" height="33"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="London" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUh-YI-8Ms">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="259" id="1gY-dq-a5y"/>
                                                     <constraint firstAttribute="height" constant="58" id="iVn-FQ-iGr"/>
@@ -325,8 +325,8 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="130" height="23"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="WED, 21 September" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpF-GV-Vwu">
-                                                <rect key="frame" x="0.0" y="33" width="130" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WED, 21 September" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpF-GV-Vwu">
+                                                <rect key="frame" x="0.0" y="25" width="130" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="J0z-PC-3oa"/>
                                                 </constraints>

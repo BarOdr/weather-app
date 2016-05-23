@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class Weather {
     
+    private var _weatherId: Int!
     private var _city: String!
     private var _day: String!
     private var _hour: String!
@@ -23,6 +24,14 @@ class Weather {
     private var _sunrise: String!
     private var _sunset: String!
     private var _wind: String!
+    
+    
+    var weatherId: Int {
+        if _weatherId == nil {
+            _weatherId = 963
+        }
+        return _weatherId
+    }
     
     var currentDate: String {
         return currentDateString()
@@ -119,6 +128,10 @@ class Weather {
             if let data = response.data {
                 
                 let json = JSON(data: data)
+                
+                if let weatherId = json["weather"][0]["id"].int {
+                    weatherConditions._weatherId = weatherId
+                }
                 
                 if let weatherDescription = json["weather"][0]["description"].string {
                     weatherConditions._weatherDesc = weatherDescription.capitalizedString

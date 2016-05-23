@@ -48,9 +48,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        emptyTheLabels()
+        
         Weather().downloadCurrentWeatherDetails { (gotWeather) in
             self.updateUI(gotWeather)
+            self.labelsFadeIn()
         }
     }
     
@@ -64,9 +67,72 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         windLbl.text = weather.wind
         cloudinessLbl.text = weather.cloudiness
         humidityLbl.text = weather.humidity
+        if 200 ... 232 ~= weather.weatherId {
+            weatherDescImg.image = UIImage(named: "w-storm")
+        } else if 300 ... 321 ~= weather.weatherId {
+            weatherDescImg.image = UIImage(named: "w-lightrain")
+        } else if 500 ... 531 ~= weather.weatherId {
+            weatherDescImg.image = UIImage(named: "w-rain")
+        } else if 600 ... 622 ~= weather.weatherId {
+            weatherDescImg.image = UIImage(named: "w-snow")
+        } else if weather.weatherId == 700 {
+            weatherDescImg.image = UIImage(named: "w-fog")
+        } else if weather.weatherId == 800 {
+            weatherDescImg.image = UIImage(named: "w-sunny")
+        } else if 801 ... 806 ~= weather.weatherId {
+            weatherDescImg.image = UIImage(named: "w-clouds")
+        } else if 900 ... 906 ~= weather.weatherId {
+            weatherDescImg.image = UIImage(named: "w-extreme")
+        } else {
+            weatherDescImg.hidden = true
+        }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        labelsFadeOut()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        labelsFadeIn()
     }
 
+    func emptyTheLabels() {
+        cityLbl.text = ""
+        dayLbl.text = ""
+        tempLbl.text = ""
+        descLbl.text = ""
+        sunriseLbl.text = ""
+        sunsetLbl.text = ""
+        windLbl.text = ""
+        cloudinessLbl.text = ""
+        humidityLbl.text = ""
+    }
     
+    func labelsFadeIn() {
+        self.cityLbl.fadeIn()
+        self.dayLbl.fadeIn()
+        self.tempLbl.fadeIn()
+        self.descLbl.fadeIn()
+        self.sunsetLbl.fadeIn()
+        self.sunriseLbl.fadeIn()
+        self.windLbl.fadeIn()
+        self.cloudinessLbl.fadeIn()
+        self.humidityLbl.fadeIn()
+        self.weatherDescImg.fadeIn()
+    }
+    
+    func labelsFadeOut() {
+        self.cityLbl.fadeOut()
+        self.dayLbl.fadeOut()
+        self.tempLbl.fadeOut()
+        self.descLbl.fadeOut()
+        self.sunriseLbl.fadeOut()
+        self.sunsetLbl.fadeOut()
+        self.windLbl.fadeOut()
+        self.cloudinessLbl.fadeOut()
+        self.humidityLbl.fadeOut()
+        self.weatherDescImg.fadeOut()
+    }
 
 }
 
