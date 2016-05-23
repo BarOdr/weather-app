@@ -98,6 +98,7 @@ class ForecastDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
     @IBAction func backBtnPressed(sender: AnyObject) {

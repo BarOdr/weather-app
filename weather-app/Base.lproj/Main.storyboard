@@ -182,7 +182,7 @@
                                                 <rect key="frame" x="16" y="11" width="120" height="91"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB0-B0-66Z">
-                                                        <rect key="frame" x="45" y="0.0" width="32" height="15"/>
+                                                        <rect key="frame" x="45" y="0.0" width="32" height="17"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -193,8 +193,8 @@
                                                             <rect key="frame" x="20" y="0.0" width="32" height="15"/>
                                                         </variation>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="torrential-rain" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-lI-DU4">
-                                                        <rect key="frame" x="35" y="15" width="50" height="50"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="torrential-rain" translatesAutoresizingMaskIntoConstraints="NO" id="8dA-lI-DU4">
+                                                        <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         <variation key="heightClass=compact" ambiguous="YES">
                                                             <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         </variation>
@@ -202,8 +202,8 @@
                                                             <rect key="frame" x="10" y="15" width="50" height="50"/>
                                                         </variation>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="16° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-lH-oyM">
-                                                        <rect key="frame" x="42" y="65" width="36" height="27"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="16° " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Es2-lH-oyM">
+                                                        <rect key="frame" x="42" y="67" width="36" height="24"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -250,7 +250,11 @@
                                                             <rect key="frame" x="12" y="0.0" width="47" height="17"/>
                                                         </variation>
                                                     </label>
+<<<<<<< HEAD
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cloudness" translatesAutoresizingMaskIntoConstraints="NO" id="C9C-Ke-aZL">
+=======
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="w-clouds" translatesAutoresizingMaskIntoConstraints="NO" id="C9C-Ke-aZL">
+>>>>>>> master
                                                         <rect key="frame" x="35" y="17" width="50" height="50"/>
                                                         <variation key="heightClass=compact" ambiguous="YES">
                                                             <rect key="frame" x="35" y="17" width="50" height="50"/>
@@ -586,9 +590,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple1" translatesAutoresizingMaskIntoConstraints="NO" id="ckd-Z5-948">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZf-bP-B3b">
                                 <rect key="frame" x="200" y="40" width="200" height="50"/>
                                 <subviews>
@@ -1312,7 +1313,11 @@
                                                             <rect key="frame" x="12" y="0.0" width="47" height="15"/>
                                                         </variation>
                                                     </label>
+<<<<<<< HEAD
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cloudness" translatesAutoresizingMaskIntoConstraints="NO" id="2bG-Md-NDn">
+=======
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="w-clouds" translatesAutoresizingMaskIntoConstraints="NO" id="2bG-Md-NDn">
+>>>>>>> master
                                                         <rect key="frame" x="35" y="15" width="50" height="50"/>
                                                         <variation key="heightClass=compact" ambiguous="YES" misplaced="YES">
                                                             <rect key="frame" x="34" y="0.0" width="50" height="36"/>
@@ -2130,6 +2135,9 @@
                                     <rect key="frame" x="20" y="130" width="360" height="355"/>
                                 </variation>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple1" translatesAutoresizingMaskIntoConstraints="NO" id="ckd-Z5-948">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2292,6 +2300,7 @@
         <image name="sunset" width="50" height="50"/>
         <image name="temperature" width="50" height="50"/>
         <image name="torrential-rain" width="50" height="50"/>
+        <image name="w-clouds" width="50" height="50"/>
         <image name="wind" width="50" height="50"/>
     </resources>
 </document>
