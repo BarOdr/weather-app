@@ -85,16 +85,73 @@ class ForecastDetailsVC: UIViewController {
     @IBOutlet weak var in3DaysDescImg: UIImageView!
     @IBOutlet weak var in3DaysTempLbl: UILabel!
     
+    // line break views' outlets
+    
+    @IBOutlet weak var lineBreak1: UIView!
+    @IBOutlet weak var lineBreak2: UIView!
+    @IBOutlet weak var lineBreak3: UIView!
+    @IBOutlet weak var lineBreak4: UIView!
+    @IBOutlet weak var lineBreak5: UIView!
+    @IBOutlet weak var lineBreak6: UIView!
+
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func backBtnPressed(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
+    override func viewWillAppear(animated: Bool) {
+        makeStacksAlphaZero()
+        stacksFadeIn()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        stacksFadeOut()
+    }
+    
+    func makeStacksAlphaZero() {
+        time1StackView.alpha = 0
+        time2StackView.alpha = 0
+        time3StackView.alpha = 0
+        time4StackView.alpha = 0
+        time5StackView.alpha = 0
+        time6StackView.alpha = 0
+        time7StackView.alpha = 0
+    }
+    
+    func stacksFadeIn() {
+        time1StackView.fadeIn()
+        lineBreak1.fadeIn()
+        time2StackView.fadeIn()
+        lineBreak2.fadeIn()
+        time3StackView.fadeIn()
+        lineBreak3.fadeIn()
+        time4StackView.fadeIn()
+        lineBreak4.fadeIn()
+        time5StackView.fadeIn()
+        lineBreak5.fadeIn()
+        time6StackView.fadeIn()
+        lineBreak6.fadeIn()
+        time7StackView.fadeIn()
+    }
+    
+    func stacksFadeOut() {
+        time1StackView.fadeOut()
+        lineBreak1.fadeOut()
+        time2StackView.fadeOut()
+        lineBreak2.fadeOut()
+        time3StackView.fadeOut()
+        lineBreak3.fadeOut()
+        time4StackView.fadeOut()
+        lineBreak4.fadeOut()
+        time5StackView.fadeOut()
+        lineBreak5.fadeOut()
+        time6StackView.fadeIn()
+        lineBreak6.fadeOut()
+        time7StackView.fadeOut()
+    }
 }
