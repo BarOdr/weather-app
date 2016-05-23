@@ -90,7 +90,9 @@ class ForecastDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        time5StackView.alpha = 0
+//        time6StackView.alpha = 0
+//        time7StackView.alpha = 0
     }
 
     @IBAction func backBtnPressed(sender: AnyObject) {
